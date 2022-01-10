@@ -1,0 +1,297 @@
+$primary-light: #d6f4ff;
+$primary-light-hover: #c2efff;
+$primary-hover: #0a2580;
+$secondary-light: #fdd8e9;
+$secondary-light-hover: #fcc5df;
+$secondary-hover: #f53d93;
+$skyblue-light: #d7f6fe;
+$skyblue-light-hover: #afedfd;
+
+.btn {
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 700;
+	box-shadow: none;
+	padding: 10px 15px;
+	font-weight: 400;
+	@include border-radius(10px);
+	@include transition(all 0.3s ease-in-out);
+	&:focus,
+	&:hover,
+	&:active {
+		box-shadow: none;
+		&:focus {
+			box-shadow: none;
+		}
+	}
+	&.btn-lg {
+		padding: 15px 24px;
+		font-size: 14px;
+	}
+	&.btn-sm {
+		font-size: 14px;
+	}
+	&.btn-xs {
+		padding: 4px 18px;
+		font-size: 12px;
+		&.btn-txt-icon {
+			i {
+				font-size: 16px;
+			}
+		}
+	}
+	&.d-block,
+	&.btn-block {
+		width: 100%;
+		text-align: center;
+	}
+	&.btn-md-block {
+		@include breakpoint(max, 767) {
+			width: 100%;
+			text-align: center;
+		}
+	}
+	&.btn-icon {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 52px;
+		height: 52px;
+		padding: 0;
+		line-height: 1;
+		font-size: 20px;
+		&.btn-sm {
+			width: 36px;
+			height: 36px;
+			font-size: 18px;
+		}
+		&.btn-xs {
+			width: 30px;
+			height: 30px;
+			font-size: 16px;
+		}
+	}
+	&.btn-no-arrow {
+		&:after {
+			display: none;
+		}
+	}
+	&.btn-clean {
+		background: transparent !important;
+		border: transparent !important;
+	}
+	&.btn-primary-light {
+		background-color: $primary-50;
+		border-color: $primary-50;
+		color: $primary;
+		&:hover {
+			background-color: $primary;
+			border-color: $primary;
+			color: $white;
+		}
+	}
+	&.btn-primary {
+		color: $white;
+	}
+	&.btn-outline-primary {
+		&:hover {
+			color: $white;
+		}
+	}
+	&.btn-secondary-light {
+		background-color: $secondary-50;
+		border-color: $secondary-50;
+		color: $secondary;
+		&:hover {
+			background-color: $secondary;
+			border-color: $secondary;
+			color: $white;
+		}
+	}
+	&.btn-secondary {
+		background-color: $secondary;
+		border-color: $secondary;
+		color: $white;
+		&:hover {
+			background-color: $secondary-hover;
+			border-color: $secondary-hover;
+		}
+	}
+	&.btn-success {
+		color: $white;
+	}
+	&.btn-outline-success {
+		&:hover {
+			color: $white;
+		}
+	}
+	&.btn-success-light {
+		background-color: $success-50;
+		border-color: $success-50;
+		color: $success;
+		&:hover {
+			background-color: $success;
+			border-color: $success;
+			color: $white;
+		}
+	}
+	&.btn-danger {
+		color: $white;
+	}
+	&.btn-outline-danger {
+		&:hover {
+			color: $white;
+		}
+	}
+	&.btn-danger-light {
+		background-color: $danger-50;
+		border-color: $danger-50;
+		color: $danger;
+		&:hover {
+			background-color: $danger;
+			border-color: $danger;
+			color: $white;
+		}
+	}
+	&.btn-warning {
+		color: $white;
+	}
+	&.btn-outline-warning {
+		&:hover {
+			color: $white;
+		}
+	}
+	&.btn-warning-light {
+		background-color: $warning-50;
+		border-color: $warning-50;
+		color: $warning;
+		&:hover {
+			background-color: $warning;
+			border-color: $warning;
+			color: $white;
+		}
+	}
+	&.btn-info-light {
+		background-color: $info-50;
+		border-color: $info-50;
+		color: $info;
+		&:hover {
+			background-color: $info;
+			border-color: $info;
+			color: $white;
+		}
+	}
+	&.btn-light {
+		color: $light-700;
+	}
+	&.btn-light-light {
+		background-color: $light-100;
+		border-color: $light-100;
+		color: $light-600;
+		&:hover {
+			background-color: $light;
+			border-color: $light;
+			color: $dark;
+		}
+	}
+	&.btn-outline-light {
+		border-color: $light-400;
+		color: $light-600;
+		&:hover {
+			border-color: $light;
+			color: $light-700;
+		}
+	}
+	&.btn-dark-light {
+		background-color: $dark-50;
+		border-color: $dark-50;
+		color: $dark;
+		&:hover {
+			background-color: $dark;
+			border-color: $dark;
+			color: $white;
+		}
+	}
+	&.btn-skyblue-light {
+		background-color: $skyblue-light;
+		border-color: $skyblue-light;
+		color: #003d4d;
+		&:hover {
+			background-color: $skyblue-light-hover;
+			border-color: $skyblue-light-hover;
+		}
+	}
+	&.btn-skyblue {
+		color: $white;
+	}
+	&.btn-txt-icon {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		i {
+			font-size: 18px;
+			line-height: 1;
+			margin-right: 8px;
+			&:before {
+				display: block;
+			}
+		}
+		&.btn-icon-right {
+			i {
+				margin-left: 8px;
+				margin-right: 0;
+			}
+		}
+	}
+	&.btn-rounded {
+		@include border-radius(48px);
+	}
+	&.btn-flate {
+		@include border-radius(0px);
+	}
+
+	&.btn-google {
+		background: $brand-google;
+		color: $white;
+	}
+	&.btn-facebook {
+		background: $brand-facebook;
+		color: $white;
+	}
+	&.btn-twitter {
+		background: $brand-twitter;
+		color: $white;
+	}
+	&.btn-linkedin {
+		background: $brand-linkedin;
+		color: $white;
+	}
+	&.btn-instagram {
+		background: $brand-instagram;
+		color: $white;
+	}
+	&.btn-github {
+		background: $brand-github;
+		color: $white;
+	}
+	&.btn-pinterest {
+		background: $brand-pinterest;
+		color: $white;
+	}
+	&.btn-whatsapp {
+		background: $brand-whatsapp;
+		color: $white;
+	}
+	&.btn-behance {
+		background: $brand-behance;
+		color: $white;
+	}
+	&.btn-dribbble {
+		background: $brand-dribbble;
+		color: $white;
+	}
+	&.btn-youtube {
+		background: $brand-youtube;
+		color: $white;
+	}
+}

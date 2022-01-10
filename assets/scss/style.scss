@@ -1,0 +1,18 @@
+@import "./variables";
+@import "./bs-variables";
+
+@import "./tabler-icons.scss";
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "./mixins";
+@import "./base";
+@import "./title";
+@import "./buttons";
+
+// Component Style
+@import "./components/header";
+@import "./components/banner";
+@import "./components/services";
+@import "./components/cta-2-col";
+@import "./components/footer";

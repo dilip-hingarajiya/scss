@@ -1,0 +1,33 @@
+.banner{
+	.banner-text-inner{
+		max-width: 612px;
+		padding: 30px 0;
+	}
+	background: $lightblue;
+	h1{
+		font-size: 40px;
+		color: $black;
+		margin-bottom: 16px;
+		@include breakpoint(max, 767) {
+			font-size: 30px;
+		}
+		span{
+			display: inline-block;
+			color: $primary;
+		}
+	}
+	p{
+		color:$gray;
+		font-size: 16px;
+		line-height: 2;
+		margin-bottom: 65px;
+		@include breakpoint(max, 767) {
+			margin-bottom: 30px;
+		}
+	}
+	.cta{
+		.btn{
+			margin-right: 20px;
+		}
+	}
+}

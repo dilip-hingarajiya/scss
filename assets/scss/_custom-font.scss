@@ -1,0 +1,19 @@
+@font-face {
+	font-family: 'Cera Basic';
+	src: url('../fonts/CeraBasic-Regular.woff2') format('woff2'),
+			url('../fonts/CeraBasic-Regular.woff') format('woff'),
+			url('../fonts/CeraBasic-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Cera Basic';
+	src: url('../fonts/CeraBasic-Bold.woff2') format('woff2'),
+			url('../fonts/CeraBasic-Bold.woff') format('woff'),
+			url('../fonts/CeraBasic-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
